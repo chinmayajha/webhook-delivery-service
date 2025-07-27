@@ -85,9 +85,6 @@ Client → FastAPI → Redis Queue → Celery Workers → Target Webhooks
 ## Development
 
 ```bash
-# Run tests
-docker-compose run api pytest
-
 # Local development
 docker-compose up db redis
 uvicorn src.webhook_service:app --reload
